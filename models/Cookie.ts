@@ -1,6 +1,14 @@
-export class Cookie {
-  //TODO - Cookies have three attributes; name, colour, chocolateChipNum
-  // colour is a string
-  // There is one constructor which takes a name as a parameter.  Initialise colour to brown and chocolateChipNum to 0
 
-}
+export class Cookie {
+ 
+    name: string;
+    colour: Colours;
+    chocolateChipNum: number = 0;
+    maxChocChips: number = 5;
+  
+    constructor(_name: string, _colour: Colours) {
+      this.name = _name;
+      this.colour = _colour;
+    }
+  }
+ 
